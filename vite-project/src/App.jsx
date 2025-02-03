@@ -276,6 +276,8 @@ const SmallCard = styled.div`
   flex-direction: column;
   background-color: #252b43;
   border-radius: 8px;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 20px;
 `;
 
 const SmallCard2 = styled(SmallCard)`
@@ -285,7 +287,9 @@ const SmallCard2 = styled(SmallCard)`
   display: flex;
   flex-direction: column;
   background-color: #252b43;
-  border-radius: 8px;
+  border-radius: 8px;\
+  @media screen and (max-width: 425px) {
+    margin-bottom: 20px;
 `;
 
 const SmallCard3 = styled(SmallCard)`
@@ -296,6 +300,8 @@ const SmallCard3 = styled(SmallCard)`
   flex-direction: column;
   background-color: #252b43;
   border-radius: 8px;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 20px;
 `;
 
 const SmallCard4 = styled(SmallCard)`
@@ -315,15 +321,23 @@ const InfoContainer = styled.div`
   justify-self: center;
   align-items: center;
   width: 80%;
-  height: 150px;
+  /*height: 150px;*/
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 const NewInfo = styled.div`
   font-size: 25px;
   color: white;
+  width: 85%;
   font-weight: bold;
   margin-top: 10px;
-  margin-left: 150px;
+  /*margin-left: 150px;*/
+  @media screen and (max-width: 425px) {
+   width: 80%;
+   text-align: center;
+   margin-left: 0px;
 `;
 
 const NewFollower = styled.div`
@@ -382,6 +396,9 @@ const Card = styled.div`
   background-color: #252b43;
   border-radius: 8px;
   border-top: 5px solid blue;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Card2 = styled(Card)`
@@ -393,6 +410,9 @@ const Card2 = styled(Card)`
   background-color: #252b43;
   border-radius: 8px;
   border-top: 5px solid blue;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Card3 = styled(Card)`
@@ -404,6 +424,9 @@ const Card3 = styled(Card)`
   background-color: #252b43;
   border-radius: 8px;
   border-top: 5px solid #f49579;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Card4 = styled(Card)`
@@ -418,13 +441,16 @@ const Card4 = styled(Card)`
 `;
 
 const CardContainer = styled.div`
-  margin-top: -30px;
+  margin: 20px 0px;
   display: flex;
   justify-content: space-between;
   justify-self: center;
   align-items: center;
-  width: 80%;
-  height: 300px;
+  width: 85%;
+  /*height: 300px;*/
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 const Subject = styled.div`
@@ -432,10 +458,13 @@ const Subject = styled.div`
   font-weight: bold;
   color: white;
   margin-left: auto;
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+  }
 `;
 const IconContainer = styled.div`
   width: 40%;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,25 +473,37 @@ const IconContainer = styled.div`
 const SubTitle = styled.div`
   font-size: 15px;
   color: #a0a7b8;
+  @media screen and (max-width: 425px) {
+    font-size: 12px;
+  }
 `;
 
 const Title = styled.div`
   font-size: 25px;
   font-weight: bold;
   color: white;
+  @media screen and (max-width: 425px) {
+    font-size: 15px;
+    margin-top: 20px;
+  }
 `;
 
 const TitleContainer = styled.div`
 color:white
-width:50%
-height:100px`;
+width:60%
+height:100px
+display:flex
+flex-direction:column
+justify-content:center`;
 
 const HeaderContainer = styled.div`
   display: flex;
-  width: 100%;
+  width: 85%;
   height: 100px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  @media screen and (max-width: 425px) {
+  margin-top: 20px;
 `;
 
 const ContentContainer = styled.div`
@@ -472,8 +513,16 @@ const ContentContainer = styled.div`
   justify-content: center;
   color: white;
 `;
+
 const BodyContainer = styled.div`
   width: 100%;
   height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
   background-color: #20222f;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    display: flex;
 `;
